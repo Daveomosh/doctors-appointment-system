@@ -1,0 +1,166 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding:0 3px;
+  box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1em;
+}
+
+.nav__content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  list-style-type: none;
+}
+.nav__content ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.bttn{
+    padding: 1em 1em;
+    border: none;
+    border-radius:50px ;
+    background-color:#0056b3;
+    /* font-size: 1.5em; */
+    /* padding-right: 1em; */
+}
+
+.log__in {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/medicine-8287535_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .log__in:hover{
+    background-color: #2dd6c1;
+} */
+.contain {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2dd6c1;
+}
+
+.signup-link,
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#error-message {
+  color: red;
+  font-size: 1em;
+}
+.signup-link a,
+.login-link a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+  background-color: #2dd6c1;
+}
+
+
+
+.footer{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:row;
+  background-color: white;
+  /* padding: 10px 20px; */
+  box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 4em; */
+  flex-wrap: wrap;
+  padding-right :50px;
+
+  margin-top:1em ;
+}
+.footer-element li{
+  list-style-type: none;
+  /* font-size: 23px; */
+  line-height: 2;
+
+}
+
+.contact-details{
+  /* margin-bottom:20px ; */
+}
+
+.social-icons{
+  margin-top:-3rem;
+  padding: 2em;
+  display: flex;
+  gap: 1em;
+  margin-top:-2em; 
+
+} 
+footer h4{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.footer-contact p {
+  display: inline-block;
+  margin-left: 20px;
+  /* font-size: 1.2em; */
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  /* margin-top: -0.9em; */
+  
+}
+

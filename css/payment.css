@@ -1,0 +1,154 @@
+.container{
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 90%;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding:0 3px;
+  box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1em;
+}
+
+.nav__content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+list-style-type: none;
+}
+.nav__content ul li a{
+color: black;
+text-decoration: none;
+font-size:1.2em;
+
+}
+
+.bttn{
+padding: 1.5em 3em;
+border: none;
+border-radius:50px ;
+background-color:#2dd6c1;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .payment {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .cash{
+    display: flex;
+  }
+  .paid{
+    border:5px solid #2dd6c1;
+    border-radius:50%;
+    width: 300px;;
+    height: 300px;
+    margin-top:23rem ;
+    }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .doc{
+    border:5px solid #2dd6c1;
+    border-radius:50%;
+    width: 300px;;
+    height: 300px;
+    }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2dd6c1;
+  }
+  .bttn:hover{
+background-color: #2dd6c1;
+  }
+  .bttn{
+    background-color:#0056b3
+  }
+
+  .footer{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row;
+    background-color: white;
+    /* padding: 10px 20px; */
+    box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 4em; */
+    flex-wrap: wrap;
+    padding-right :50px;
+  
+    margin-top:1em ;
+  }
+  .footer-element li{
+    list-style-type: none;
+    /* font-size: 23px; */
+    line-height: 2;
+  
+  }
+  
+  .contact-details{
+    /* margin-bottom:20px ; */
+  }
+  
+  .social-icons{
+    margin-top:-3rem;
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+    margin-top:-2em; 
+  
+  } 
+  
+  footer h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .footer-contact p {
+    display: inline-block;
+    margin-left: 20px;
+    /* font-size: 1.2em; */
+  }
+  
+  .footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* margin-top: -0.9em; */
+    
+  }
+
+  
