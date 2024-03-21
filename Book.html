@@ -10,22 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+
     <nav>
+      <div class="container"></div>
         <div class="nav__content">
           <div class="logo">
             <a href="/"> <img src="images/2.png" width="200" /></a>
         </div>
         <ul>
-                <li><a href="/"></a></li>
-                <li><a href="/log.html/signup.html"></a></li>
-                <li><a href="/bookingform.html">Book Appointement</a></li>
-               <button class="bttn" id="button">Contact us</button>
+          <li><a href="/">Home</a></li>
+          <li><a href="log.html" id="log">Log in</a></li>
+          <li><a href="logout.htm" id="logout">Logout</a></li>
+          <li><a href="/Book.html" id="book">Book Appointement</a></li>
+          <button class="bttn" id="button">Contact us</button>
+        <!-- <li><a href="/log.html/signup.html"></a></li> -->
 
-        </ul>
+  </ul>
     </div>
-  </nav>
+  
 </div>
+</nav>
 <div class="container">
   
         <h2 class="heading">Doctors Near You</h2>
@@ -35,9 +39,10 @@
               <img src="images/vecteezy_doctor-female-with-face-mask-isolated-icon_.jpg"width="300px"class="image">
           </div>
           <div>
-              <h3>Physician:Dr Brandy</h3>
+              <h3>Cardiologist :Dr Brandy</h3>
                  <h4>Location:Kibra</h4>
                 <p> Contact:0788909056</p> 
+                <p>Fees:ksh 3000</p>
                 <p>Consult Time: 9AM to 5pm</p>
               <div>
               <button class="btn">Book Now</button>
@@ -49,9 +54,10 @@
               <img src="images/vecteezy_cheerful-male-doctor-with-stethoscope_.jpg"width="300px"class="image">
           </div>
           <div>
-              <h3>Physician: Dr Charles</h3>
+              <h3>Dental Care: Dr Charles</h3>
                  <h4>Location: Kileleshwa</h4>
                 <p> Contact: 0788909056</p> 
+                <p>Fess:ksh 1500</p>
                 <p>Consult Time: 9AM to 5pm</p>
               <div>
               <button class="btn">Book Now</button>
@@ -64,9 +70,10 @@
               <img src="images/female2.png"width="300px"class="image">
           </div>
           <div>
-              <h3>Physician: Dr Maggy</h3>
+              <h3>Paediatrician : Dr Maggy</h3>
                  <h4>Location: Karen</h4>
                 <p> Contact: 0788909056</p> 
+                <p>Fees:ksh 2000</p>
                 <p>Consult Time: 9AM to 5pm</p>
               <div>
               <button class="btn">Book Now</button>
@@ -81,6 +88,7 @@
               <h3>Physician: Dr Brian</h3>
                  <h4>Location: Ngong RD</h4>
                 <p> Contact: 0788909056</p> 
+                <p>Fees:ksh 1000</p>
                 <p>Consult Time: 9AM to 5pm</p>
               <div>
               <button class="btn">Book Now</button>
@@ -271,5 +279,7 @@
   
 </footer>
 <script src="js/doctors.js"></script>
+<script src="js/renderNav.js"></script>
+
 </body>
 </html>

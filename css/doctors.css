@@ -12,9 +12,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding:0 3px;
-  box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.9);
-  margin-bottom: 1em;
+  /* padding:0 0.5px; */
+  box-shadow: 0 0.1px 0.8px rgba(0, 0, 0, 0.9);
+  /* margin-bottom: 1em; */
+  box-sizing: border-box;
+  margin-top: -3em;
+
 }
   .nav__content ul {
     display: flex;
@@ -81,7 +84,7 @@
 .doctors{
   display: flex;
   flex-direction: row;
-  gap:3em;
+  gap:2em;
 
 }
 .heading{
@@ -123,7 +126,7 @@
       flex-wrap: wrap;
       padding-right :50px;
     
-      margin-top:1em ;
+      margin-top:2em ;
     }
     .footer-element li{
       list-style-type: none;

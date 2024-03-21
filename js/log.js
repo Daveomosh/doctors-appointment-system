@@ -9,10 +9,8 @@
   //   });
   // });
   document.addEventListener("DOMContentLoaded", function () {
-    const users = [
-        { username: "username", password: "password" },
-    //     { username: "user2", password: "password2" },
-    ];
+    const users = JSON.parse(localStorage.getItem("users"));
+    console.log(users)
     const loginForm = document.getElementById("loginForm");
     loginForm.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -21,15 +19,26 @@
         const username = usernameInput.value;
         const password = passwordInput.value;
         const user = users.find(
-            (user) => user.username === username && user.password === password
+            (userItem) => userItem.username === username && userItem.password === password
         );
+        console.log(user)
         if (user) {
             // Authentication successful, redirect to shop.html
-            localStorage.setItem("username", username);
-            // Remove any existing error message
-            const message = document.getElementById("erro-message");
-            message.textContent = "";
             
+            // Remove any existing error message
+            const message = document.getElementById("error-message");
+            message.textContent = "";
+
+            let currentUser = {
+              username:username,
+              pasword: password, 
+            
+          };
+          console.log(currentUser)
+            window.location.href = "http://127.0.0.1:5500/Book.html"
+localStorage.setItem("currentUser",JSON.stringify( currentUser))
+           
+            // console.log(currentUser)
         } else {
             // Authentication failed, display error message
             const message= document.getElementById("error-message");
@@ -39,14 +48,14 @@
             usernameInput.focus();
             
         }
-        window.location.href = "Book.html"
+      
     });
-    const storedUsername = localStorage.getItem("username");
-    if (storedUsername) {
-     
-        // window.location.href = "";
-    }
+    
+   
 });
+const isLoggedIn=document.getElementById("loginF")
+const bookPage=document.getElementById("book")
+const log=document.getAnimations("log")
 
 
 

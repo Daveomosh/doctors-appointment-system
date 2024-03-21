@@ -11,21 +11,26 @@
 </head>
 <body>
 
-    <div class="contain">
+    
         <nav>
+          <div class="contain">
         <div class="nav__content">
           <div class="logo">
             <a href="/"> <img src="images/2.png" width="200" /></a>
         </div>
         <ul>
-                <li><a href="/"></a></li>
-                <li><a href="/pay.html">Book Appointement</a></li>
-            
-               <button class="bttn" id="button">Contact us</button>
-        </ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="log.html" id="log">Log in</a></li>
+          <li><a href="logout.htm" id="logout">Logout</a></li>
+          <li><a href="/Book.html" id="book">Book Appointement</a></li>
+          <button class="bttn" id="button">Contact us</button>
+        <!-- <li><a href="/log.html/signup.html"></a></li> -->
+
+  </ul>
     </div>
-  </nav>
   </div>
+  </nav>
+  
   <div class="contain">
     <div class="content">
   <div class="containers">
@@ -42,7 +47,7 @@
         <option value="">Choose a service</option>
         <option value="checkup">Regular Checkup</option>
         <option value="vaccine">Vaccination</option>
-        <option value="therapy">Therapy Session</option>
+        <option value="therapy">Dental care</option>
       </select>
 
       <button type="submit" id="submit">Book Appointment</button>
@@ -106,5 +111,7 @@
 </footer>
 </div>
 <script src="js/book.js"></script>
+<script src="js/renderNav.js"></script>
+
 </body>
 </html>

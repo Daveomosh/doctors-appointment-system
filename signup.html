@@ -18,12 +18,14 @@
             <a href="/"> <img src="images/2.png" width="200" /></a>
         </div>
         <ul>
-                <li><a href="/"></a></li>
-                <li><a href="/Book.html">Book Appointement</a></li>
-                <button class="bttn" id="button">Contact us</button>
-              <li><a href="/log.html/signup.html"></a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="log.html" id="log">Log in</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+          <li><a href="/Book.html" id="book">Book Appointement</a></li>
+          <button class="bttn" id="button">Contact us</button>
+        <!-- <li><a href="/log.html/signup.html"></a></li> -->
 
-        </ul>
+  </ul>
     </div>
   </nav>
   </div>
@@ -34,19 +36,31 @@
 
 <div class="container" id="signupContainer">
   <form id="signupForm">
-      <h2>Sign Up</h2>
-      <h6 id="error-message"></h6>
+    <h2>Sign Up</h2>
+    <h6 id="error-message" style="color:red"></h6>
 
-      <input type="text" id="signupUsername" placeholder="Username" name="username">
-      <input type="email" id="signupEmail" placeholder="Email" name="email">
-      <input type="password" id="signupPassword" placeholder="Password" name="Password">
-      <input type="location"id="location" placeholder="location" name="locatiom">
-      <input type="aim"id="purpurse" placeholder="Patient/Doctor" name="aim">
-      <button type="submit" id="sign">Sign Up</button>
+    <input type="text" id="signupUsername" placeholder="Username" name="username">
+  
+    <input type="email" id="signupEmail" placeholder="Email" name="email">
+    <input type="password" id="signupPassword" placeholder="Password" name="password">
+
+    <input type="text" id="location" placeholder="Location" name="location">
+ 
+
+    <select id="purpose" name="purpose">
+      <option value="patient">Patient</option>
+      <option value="doctor">Doctor</option>
+    </select>
+    <br><br>
+    <!-- <br></br> -->
+    <button type="submit" id="sign">Sign Up</button>
   </form>
+</div>
+
   <div class="login-link">
       <p>Already have an account? <a href="/log.html" onclick="showLoginForm()">Login</a></p>
   </div>
+  <span id="email-error" style="color: red;"></span><br>
 </div>
 
   </div>
@@ -111,5 +125,7 @@
   </footer>
 
 <script src="js/sign.js"></script>
+<script src="js/renderNav.js"></script>
+
 </body>
 </html>

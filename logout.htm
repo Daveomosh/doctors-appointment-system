@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Healthcare Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
+    <title>Logout Form</title>
+    <link href="css/logout.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -19,38 +14,23 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="log.html" id="log">Log in</a></li>
-          <li><a href="log.html" id="logout">Logout</a></li>
+          <li><a href="logout.htm" id="logout">Logout</a></li>
           <li><a href="/Book.html" id="book">Book Appointement</a></li>
           <button class="bttn" id="button">Contact us</button>
         <!-- <li><a href="/log.html/signup.html"></a></li> -->
 
   </ul>
     </div>
-  </nav>
-  <div class="form">
+  </nav>\
 
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    
-    <div class="cont">
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+<div class="logout__form">
+    <div class="logout__link">
+        <h2>Logout</h2>
+       <button id="logoutButton" onclick="confirmLogout()">Logout</button>
     </div>
-  </div>
-   
-        
-          <footer>
+</div>
+    <footer>
+        <div class="container">
           <div class="footer">
           <div class="footer-element">
       
@@ -65,13 +45,13 @@
             </div>
           </div>
           </div>
-      
+          
           <div class="footer-element">
             <h4>Quick Links</h4>
             <ul>
               <li class="home">Home</li>
-              <li>About Us</li>
-              <li>Testimonials</li>
+              <li>Book Appointement</li>
+              <li>Payment</li>
               <li>Contact Us</li>
             </ul>
           </div>
@@ -102,15 +82,12 @@
             </div>
           </div>
         </div>
-      </footer>
         </div>
-      
-      <script src="js/contact.js"></script>
-      <script src="js/renderNav.js"></script>
-
-      </body>
-      </html>
-      
-      
-      
-      
+      </footer>
+    
+    <script src="js/logout.js"></script>
+    <script src="js/renderNav.js"></script>
+    
+    </body>
+    </html>
+    

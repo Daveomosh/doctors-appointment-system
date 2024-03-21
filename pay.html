@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medicare Payment Form</title>
+<title>consultation Fee Form</title>
 <link rel="stylesheet" href="css/payment.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<script src="https://www.paypal.com/sdk/js?client-id=BAAygm47WrpsXx7VctRcKHz3S-HbuWJldUpUCes4aUGu4zhKB5635G4V0Nq5C-WgyvcAPdOSM3qD2WLtSE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 </head>
 <body>
   <div class="container">
@@ -17,11 +18,14 @@
         <a href="/"> <img src="images/2.png" width="200" /></a>
     </div>
     <ul>
-            <li><a href="/"></a></li>
-            <li><a href="/Book.html">Book Appointement</a></li>
-            <button class="bttn" id="button">Contact us</button>
+      <li><a href="/">Home</a></li>
+      <li><a href="log.html" id="log">Log in</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+      <li><a href="/Book.html" id="book">Book Appointement</a></li>
+      <button class="bttn" id="button">Contact us</button>
+    <!-- <li><a href="/log.html/signup.html"></a></li> -->
 
-    </ul>
+</ul>
 </div>
 </nav>
 </div>
@@ -33,7 +37,7 @@
   </div>
   <div class="payment">
   <form id="paymentForm">
-    <h2>Medicare Payment Form</h2>
+    <h2>Consultation Fee  Form</h2>
     <div class="form-group">
       <label for="patientName">Patient Name</label>
       <input type="text" id="patientName" name="patientName" required>
@@ -57,6 +61,10 @@
       <button type="submit">Submit Payment</button>
     </div>
   </form>
+  <div id="paypal-container-LPAN94LX3LC54"></div>
+
+
+
   
 </div>
 </div>
@@ -121,7 +129,18 @@
   </div>
   </div>
 </footer>
+
+
+
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "LPAN94LX3LC54",
+  }).render("#paypal-container-LPAN94LX3LC54")
+</script>
+
 <script src="js/pay.js"></script>
+<script src="js/renderNav.js"></script>
+
 </body>
 </html>
 
