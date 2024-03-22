@@ -55,7 +55,7 @@ const saveUserToLocalStorage = (member) => {
       users.push(member);
       localStorage.setItem("users", JSON.stringify(users));
 
-      window.location.href = "http://127.0.0.1:5500/log.html";
+      window.location.href = `${window.location.origin/log.html}`;
     }
   }
 };
